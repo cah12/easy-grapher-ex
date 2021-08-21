@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.9.0/math.min.js"></script>
-
 	<script>
 		if (document.cookie.indexOf('firstVisit') == -1) {
 			// cookie doesn't exist, create it now
@@ -17,7 +16,7 @@
 		}  
 	</script>
 
-	<script data-main="app" src="lib/require.js"></script>
+	<!-- <script data-main="app" src="lib/require.js"></script> -->
 	<script src="lib/conrec.js"></script>
 
 	<!--script src="app/src/srcDepends.js"></script-->
@@ -25,18 +24,35 @@
 	<link href="css/layout.css" rel="stylesheet">
 	<link href="css/contextMenu.css" rel="stylesheet">
 
-	<link href="css/treetable.css" rel="stylesheet" type="text/css" />
-	<link href="css/jquery.treetable.theme.default.css" rel="stylesheet" type="text/css" />
-	<!--script src="lib/treetable.js"></script-->
+
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/jquery-treetable/3.2.0/css/jquery.treetable.min.css" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/jquery-treetable/3.2.0/css/jquery.treetable.theme.default.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-treetable/3.2.0/jquery.treetable.min.js"></script>
+
+
+	<!-- Filesystem CDNs -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.serializeJSON/3.1.1/jquery.serializejson.min.js"
+		integrity="sha512-czywXrb/msTMh+lhgSe/vQ0GT0OraNiD8Knd7A7fMqEjDmQxljn/b39skl45eu+iyG0wxC9SuqcaUatZ4S0kdA=="
+		crossorigin="anonymous"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/gh/cah12/fs-mongo@latest/js/treetable.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cah12/fs-mongo@latest/css/treetable.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cah12/fs-mongo@latest/css/jquery.treetable.theme.default.css" /> -->
+	<script src="https://cdn.jsdelivr.net/gh/cah12/fs-mongo@latest/js/fileSystem.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cah12/fs-mongo@latest/css/fileSystem.min.css" />
+	<!-- <script src="https://purge.jsdelivr.net/gh/cah12/fs-mongo@latest/js/fileSystem.min.js"></script> -->
+
+	<!-- <script src="fileSystem.js"></script> -->
+
+	<script data-main="app" src="lib/require.js"></script>
 
 </head>
 
 <body>
 	<div id="plotDivContainer" style="position: absolute; width:100%; height: 98%;">
 		<div id="plotDiv" class="plotContainer noToolBar"></div>
-
-		<!--div id="test">My Test</div-->
-	</div>
+	</div>	
 </body>
 
 </html>
