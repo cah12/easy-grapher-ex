@@ -10,6 +10,7 @@ var cookieParser = require("cookie-parser");
 //const { count } = require("console");
 
 const folder = "www-built";
+app.use(express.static(path.join(__dirname, "public", "www-built")));
 
 function incrementCount() {
   fs.readFile("count.txt", "utf8", (err, data) => {
@@ -66,7 +67,7 @@ app.use(cookieParser());
 app.use(siteVisits);
 
 
-app.use(express.static(path.join(__dirname, "public", "www-built")));
+//app.use(express.static(path.join(__dirname, "public", "www-built")));
 
 const PORT = process.env.PORT||5000;
 app.listen(PORT, function () {
