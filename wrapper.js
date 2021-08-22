@@ -5,6 +5,8 @@ const path = require("path");
 const app = express();
 const fs = require("fs");
 var cookieParser = require("cookie-parser");
+
+/*
 const { count } = require("console");
 
 const folder = "www-built";
@@ -62,7 +64,9 @@ function siteVisits(req, res, next) {
 }
 app.use(cookieParser());
 app.use(siteVisits);
-app.use(express.static(path.join(__dirname, "public", folder)));
+*/
+
+app.use(express.static(path.join(__dirname, "public", "www-built")));
 
 const PORT = process.env.PORT||5000;
 app.listen(PORT, function () {
