@@ -1219,7 +1219,7 @@ this.setTicks=function(type,ticks){type>=0&&type<NTickTypes&&(d_ticks[type]=tick
 	param type MinorTick, MediumTick or MajorTick
 	return Tick list
 	 */
-this.ticks=function(type){return type>=0&&type<NTickTypes?d_ticks[type]:[]}};ScaleDiv.prototype.toString=function(){return"[ScaleDiv]"},define("scaleDiv",(function(){}));class Interval{constructor(minValue,maxValue,borderFlags){minValue<=Number.MIN_VALUE&&(minValue=-.5,maxValue=.5);var d_minValue=0,d_maxValue=-1,d_borderFlags=IncludeBorders;void 0!==minValue&&void 0!==maxValue&&(d_minValue=minValue,d_maxValue=maxValue),void 0!==borderFlags&&(d_borderFlags=borderFlags)
+this.ticks=function(type){return type>=0&&type<NTickTypes?d_ticks[type]:[]}};ScaleDiv.prototype.toString=function(){return"[ScaleDiv]"},define("scaleDiv",(function(){}));class Interval{constructor(minValue,maxValue,borderFlags){minValue<=Number.MIN_VALUE&&0==maxValue&&(minValue=-.5,maxValue=.5);var d_minValue=0,d_maxValue=-1,d_borderFlags=IncludeBorders;void 0!==minValue&&void 0!==maxValue&&(d_minValue=minValue,d_maxValue=maxValue),void 0!==borderFlags&&(d_borderFlags=borderFlags)
 /*!
         Change the border flags
 
