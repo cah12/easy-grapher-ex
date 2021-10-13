@@ -193,16 +193,22 @@ span.rvts29
 {
  font-size: 12pt;
  font-family: '@yu gothic ui';
+ color: #3f3f3f;
+}
+span.rvts30
+{
+ font-size: 12pt;
+ font-family: '@yu gothic ui';
  color: #333333;
  background-color: #ffffff;
 }
-span.rvts30
+span.rvts31
 {
  font-size: 12pt;
  font-family: 'Verdana', 'Geneva', sans-serif;
  color: #333333;
 }
-a.rvts31, span.rvts31
+a.rvts32, span.rvts32
 {
  font-size: 12pt;
  font-family: '@yu gothic ui';
@@ -211,13 +217,7 @@ a.rvts31, span.rvts31
  color: #0000ff;
  text-decoration: underline;
 }
-a.rvts31:hover { color: #22527b; }
-span.rvts32
-{
- font-size: 11pt;
- color: #202122;
- background-color: #ffffff;
-}
+a.rvts32:hover { color: #22527b; }
 span.rvts33
 {
  font-size: 12pt;
