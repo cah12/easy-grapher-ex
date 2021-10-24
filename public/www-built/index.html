@@ -42,22 +42,45 @@
 	<!-- <script src="https://cdn.jsdelivr.net/gh/cah12/fs-mongo@latest/js/treetable.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cah12/fs-mongo@latest/css/treetable.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cah12/fs-mongo@latest/css/jquery.treetable.theme.default.css" /> -->
-	<script src="https://cdn.jsdelivr.net/gh/cah12/fs-mongo/js/fileSystem.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/cah12/fs-mongo@latest/js/fileSystem.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cah12/fs-mongo@latest/css/fileSystem.min.css" />
 	<!-- <script src="https://purge.jsdelivr.net/gh/cah12/fs-mongo@latest/js/fileSystem.min.js"></script> -->
 
 	<!-- <script src="fileSystem.js"></script> -->
 
+	<!-- <script src="app.js"></script> -->
 	<script data-main="app" src="lib/require.js"></script>
+	<!-- <script src="main.js"></script> -->
+	
+	
 
 </head>
 
 <body>
-	<div id="plotDivContainer" style="position: absolute; width:100%; height: 98%;">
-		<div id="plotDiv" class="plotContainer noToolBar"></div>
-	</div>	
-
+	<!-- Example of a single plot taking up all of the screen -->	
+	<div id="plotDiv" class="plotContainer noToolBar"></div>		
 	
+
+	<!-- Example of a single plot taking up 60% of width and 60% of height of the screen -->
+	<!-- <div style="position: absolute; left: 20%; top:20%; width:60%; height: 60%;">
+		<div id="plotDiv" class="plotContainer noToolBar"></div>		
+	</div> -->
+
+	<!-- Example of two plots stacked each taking up approx half of the screen height-->
+	<!-- <div style="position: absolute; width:100%; height: 49%;">
+		<div id="plotDiv" class="plotContainer noToolBar"></div>		
+	</div>
+	<div style="position: absolute; top:49%; width:100%; height: 49%;">
+		<div id="plotDiv2" class="plotContainer noToolBar"></div>		
+	</div>	 -->
+
+	<!-- Example of two plots side-by-side each taking up approx. half of the screen width-->
+	<!-- <div style="position: absolute; width:50%; height: 98%;">
+		<div id="plotDiv" class="plotContainer noToolBar"></div>		
+	</div>
+	<div style="position: absolute; left:50%; width:50%; height: 98%;">
+		<div id="plotDiv2" class="plotContainer noToolBar"></div>		
+	</div> -->
 </body>
 
 </html>
