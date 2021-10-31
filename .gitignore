@@ -1,5 +1,5 @@
 node_modules
-desktop.ini
+*.ini
 debug.log
 build.txt
 deploy.bat
