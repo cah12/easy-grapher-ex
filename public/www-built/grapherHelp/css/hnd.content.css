@@ -481,6 +481,15 @@ a.rvts69, span.rvts69
  color: #0000ff;
  text-decoration: underline;
 }
+a.rvts70, span.rvts70
+{
+ font-size: 12pt;
+ font-family: '@yu gothic ui';
+ font-style: italic;
+ color: #000000;
+ text-decoration: none;
+}
+a.rvts70:hover { color: #22527b; }
 /* ========== Para Styles ========== */
 p,ul,ol /* Paragraph Style */
 {
