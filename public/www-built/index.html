@@ -3,22 +3,23 @@
 
 <head>
 	<title>Grapher</title>
-	
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	
+
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.2.0/math.min.js"></script>
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.6.5/math.min.js"></script> -->
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.9.0/math.min.js"></script> -->
-	<script>
+	<!-- <script>
 		if (document.cookie.indexOf('firstVisit') == -1) {
 			// cookie doesn't exist, create it now
 			document.cookie = 'firstVisit=1';
-		}  
-	</script>
+		}
+	</script> -->
 
 	<!-- <script data-main="app" src="lib/require.js"></script> -->
 	<script src="lib/conrec.js"></script>
@@ -49,38 +50,58 @@
 
 	<!-- <script src="fileSystem.js"></script> -->
 
+
+	
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/gh/cah12/equation-editor@v1.0.8/js/editor.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cah12/equation-editor@v1.0.8/css/editor.min.css" />
+
+
 	<script data-main="app" src="lib/require.js"></script>
+
+
+
 
 	<!-- <link rel="icon" href="favicon.png" type="image/x-icon"> -->
 	<!-- <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16"> -->
+
+
+
 </head>
 
 <body>
 	<!-- <div id="google_translate_element"></div> -->
-	<!-- Example of a single plot taking up all of the screen -->	
-	<div id="plotDiv" class="plotContainer noToolBar"></div>		
-	
+	<!-- Example of a single plot taking up all of the screen -->
+	<div id="plotDiv" class="plotContainer"></div>
+
 
 	<!-- Example of a single plot taking up 60% of width and 60% of height of the screen -->
 	<!-- <div style="position: absolute; left: 20%; top:20%; width:60%; height: 60%;">
-		<div id="plotDiv" class="plotContainer noToolBar"></div>		
+		<div id="plotDiv" class="plotContainer"></div>		
 	</div> -->
 
 	<!-- Example of two plots stacked each taking up approx half of the screen height-->
 	<!-- <div style="position: absolute; width:100%; height: 49%;">
-		<div id="plotDiv" class="plotContainer noToolBar"></div>		
+		<div id="plotDiv" class="plotContainer"></div>		
 	</div>
 	<div style="position: absolute; top:49%; width:100%; height: 49%;">
-		<div id="plotDiv2" class="plotContainer noToolBar"></div>		
+		<div id="plotDiv2" class="plotContainer"></div>		
 	</div>	 -->
 
 	<!-- Example of two plots side-by-side each taking up approx. half of the screen width-->
 	<!-- <div style="position: absolute; width:50%; height: 98%;">
-		<div id="plotDiv" class="plotContainer noToolBar"></div>		
+		<div id="plotDiv" class="plotContainer"></div>		
 	</div>
 	<div style="position: absolute; left:50%; width:50%; height: 98%;">
-		<div id="plotDiv2" class="plotContainer noToolBar"></div>		
+		<div id="plotDiv2" class="plotContainer"></div>		
 	</div> -->
+
+	<!-- <script src="https://cdn.jsdelivr.net/gh/cah12/equation-editor@v1.0.6/js/editor.min.js"></script> -->
+
+
+
 </body>
 
 </html>
