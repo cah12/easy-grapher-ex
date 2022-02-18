@@ -3,22 +3,22 @@
     display: none !important;
   }
   .plotDivPrint {
-    left: 0 !important;
+    left: 0% !important;
     width: 98% !important;
     height: 98% !important;
-    background-color: #fff !important;
+    background-color: #ffffff !important;
   }
 }
-body,
-html {
+html,
+body {
   overflow: hidden;
 }
 input:-moz-read-only {
-  background-color: #ff0;
+  background-color: yellow;
   color: grey;
 }
 input:read-only {
-  background-color: #d3d3d3;
+  background-color: lightGrey;
   color: grey;
 }
 .noSelect {
@@ -29,7 +29,7 @@ input:read-only {
   user-select: none;
 }
 .unchecked {
-  color: #000;
+  color: black;
   cursor: pointer;
   font-size: 12px;
 }
@@ -40,14 +40,14 @@ input:read-only {
   font-size: 12px;
 }
 .unchecked:hover {
-  background-color: #d3d3d3;
+  background-color: lightGrey;
 }
 table {
   width: 99%;
   white-space: nowrap;
 }
 th {
-  border: 1px solid #000;
+  border: 1px solid black;
 }
 .color {
   min-width: 12px;
@@ -66,7 +66,7 @@ th {
   height: 22px;
   left: 108px;
   right: 305px;
-  top: 0;
+  top: 0px;
   overflow: hidden;
 }
 #bottomScaleDiv {
@@ -82,7 +82,7 @@ th {
   position: absolute;
   left: 108px;
   right: 305px;
-  bottom: 0;
+  bottom: 0px;
   overflow: hidden;
 }
 #topScaleDiv {
@@ -95,7 +95,7 @@ th {
 }
 #wrap {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   width: 22px;
   height: 100%;
   text-align: center;
@@ -107,7 +107,7 @@ th {
   position: absolute;
   bottom: 62px;
   top: 62px;
-  left: 0;
+  left: 0px;
   overflow: hidden;
 }
 #rightScaleDiv {
@@ -150,6 +150,7 @@ th {
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 .grid-item {
   box-sizing: border-box;
@@ -158,7 +159,7 @@ th {
 }
 .grid-item-header {
   box-sizing: border-box;
-  background-color: #d3d3d3;
+  background-color: lightgray;
   height: 60px;
   font-size: 12px;
 }
@@ -168,7 +169,7 @@ th {
   height: 120px;
 }
 :disabled {
-  background: #ccc;
+  background: #cccccc;
 }
 .switch {
   position: relative;
@@ -199,7 +200,7 @@ th {
   width: 15px;
   left: 4px;
   bottom: 4px;
-  background-color: #fff;
+  background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
