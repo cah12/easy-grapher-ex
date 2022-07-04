@@ -431,41 +431,42 @@ span.rvts63
 {
  font-size: 12pt;
  font-style: italic;
- color: #333333;
+ color: #000000;
  background-color: #f9f9f9;
 }
 span.rvts64
 {
  font-size: 12pt;
- font-style: italic;
  color: #000000;
  background-color: #f9f9f9;
 }
 span.rvts65
 {
  font-size: 12pt;
- color: #000000;
- background-color: #f9f9f9;
-}
-span.rvts66
-{
- font-size: 12pt;
  font-family: 'yu gothic ui';
  color: #000000;
 }
-a.rvts67, span.rvts67
+a.rvts66, span.rvts66
 {
  font-size: 12pt;
  font-family: 'yu gothic ui';
  color: #0000ff;
  text-decoration: underline;
 }
-a.rvts67:hover { color: #22527b; }
-a.rvts68, span.rvts68
+a.rvts66:hover { color: #22527b; }
+a.rvts67, span.rvts67
 {
  font-size: 12pt;
  font-family: 'yu gothic ui';
  color: #190000;
+ text-decoration: none;
+}
+a.rvts67:hover { color: #22527b; text-decoration: underline; }
+a.rvts68, span.rvts68
+{
+ font-size: 12pt;
+ font-family: 'yu gothic ui';
+ color: #3f3f3f;
  text-decoration: none;
 }
 a.rvts68:hover { color: #22527b; text-decoration: underline; }
@@ -473,19 +474,11 @@ a.rvts69, span.rvts69
 {
  font-size: 12pt;
  font-family: 'yu gothic ui';
- color: #3f3f3f;
- text-decoration: none;
-}
-a.rvts69:hover { color: #22527b; text-decoration: underline; }
-a.rvts70, span.rvts70
-{
- font-size: 12pt;
- font-family: 'yu gothic ui';
  color: #0000ff;
  text-decoration: none;
 }
-a.rvts70:hover { color: #22527b; }
-a.rvts71, span.rvts71
+a.rvts69:hover { color: #22527b; }
+a.rvts70, span.rvts70
 {
  font-size: 12pt;
  font-family: '@yu gothic ui';
@@ -494,7 +487,7 @@ a.rvts71, span.rvts71
  color: #0000ff;
  text-decoration: underline;
 }
-a.rvts72, span.rvts72
+a.rvts71, span.rvts71
 {
  font-size: 12pt;
  font-family: '@yu gothic ui';
@@ -502,7 +495,7 @@ a.rvts72, span.rvts72
  color: #000000;
  text-decoration: none;
 }
-a.rvts72:hover { color: #22527b; }
+a.rvts71:hover { color: #22527b; }
 /* ========== Para Styles ========== */
 p,ul,ol /* Paragraph Style */
 {
