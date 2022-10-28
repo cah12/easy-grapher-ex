@@ -4,6 +4,8 @@
 <head>
 	<title>Grapher</title>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 	<script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/nerdamer.core.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/Algebra.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/Calculus.js"></script>
@@ -72,8 +74,10 @@
 		integrity="sha512-HkqBSHrFzunK6jk75LmZkM5pbh/pMz8lbiIDb/EtjCN47YN/yew2IX9psHEvLFgKhR5EMYUPyazqBsqAgghE5Q=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
 	<script src="//unpkg.com/mathlive"></script>
+	<script src="lib/arrow-table.js"></script>
+
+
 	<script data-main="app" src="lib/require.js"></script>
 
 
@@ -87,6 +91,18 @@
 </head>
 
 <body>
+	<!-- <script type="module">
+		window.addEventListener('DOMContentLoaded', () =>
+			import('//unpkg.com/mathlive?module').then((mathlive) =>
+				mathlive.renderMathInDocument()
+			)
+		);
+
+
+	</script> -->
+
+
+	<!-- <button id="testButton">test</button> -->
 	<!-- <div id="google_translate_element"></div> -->
 	<!-- Example of a single plot taking up all of the screen -->
 	<div id="plotDiv" class="plotContainer"></div>
