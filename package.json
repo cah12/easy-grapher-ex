@@ -13,7 +13,10 @@
   "dependencies": {
     "cookie-parser": "^1.4.5",
     "cookies": "^0.8.0",
-    "express": "^4.17.1"
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "file-system-mongo": "^1.0.17",
+    "file-system-routes": "^1.0.8"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
