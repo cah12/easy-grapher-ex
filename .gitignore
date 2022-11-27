@@ -3,3 +3,5 @@ node_modules
 debug.log
 build.txt
 deploy.bat
+fileSystem.js
+.env
