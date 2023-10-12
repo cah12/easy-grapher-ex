@@ -17,10 +17,8 @@ const options = {
 };
 
 //Only needed for same domain (i.e. when no whitelist is provided in options argument).
-const { router, authenticateToken, getUserFs } = require("mongo-db-filesystem")(
-  app,
-  options
-);
+const { router, authenticateToken, getUserFs } =
+  require("mongo-db-filesystem-ex")(app, options);
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json({ limit: "140mb", extended: true }));
 
