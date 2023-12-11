@@ -203,8 +203,8 @@
 <p class="rvps2"><span class="rvts18"><br/></span></p>
 <p class="rvps2"><span class="rvts18">You enter a unique name in the name field. The value field can contain any combination of a constant, an expression that evaluates to a constant, or any expression that could be resolved by the Grapher. </span></p>
 <p class="rvps2"><span class="rvts18">Press </span><span class="rvts20">Add </span><span class="rvts18">to register the name as a definition. All definitions added through the define dialog are displayed in a table.</span></p>
-<p class="rvps2"><span class="rvts18">In the Defines dialog above, </span><span class="rvts35">"a = 4"</span><span class="rvts18">&nbsp;is the first constant defined. </span><span class="rvts35">"b=2a"</span><span class="rvts18">&nbsp;(i.e. b = 2x4=8) is the second constant defined.</span><span class="rvts35">&nbsp;"c=pi"</span><span class="rvts18">&nbsp;(i.e. c=22/7) is third constant defined. &nbsp;</span><span class="rvts35">"df=abc"</span><span class="rvts18">&nbsp;is the fourth constant defined. It is similar to the second definition and shows that a definition can be in terms of other definitions. </span><span class="rvts35">"SC=u^2+v^2"</span><span class="rvts18">&nbsp;is the fifth definition. Note the name is "SC" (with a uppercase C) and not "Sc" (with a lowercase). The Grapher will not allow the name "Sc" at this stage because "c" is used in definitions "c=pi" and "df=abc". The value of SC is u^2+v^2. Since u and v are undefined, if they are not independent variables, they are treateted as unknowns.</span></p>
-<p class="rvps2"><span class="rvts18">You use the </span><span class="rvts20">Load</span><span class="rvts18">&nbsp;button to launch the file explorer of your system or mongo and upload a definition file (i.e a CSV .def, .txt or EXCEL).</span></p>
+<p class="rvps2"><span class="rvts18">In the Defines dialog above, </span><span class="rvts35">"a = 4"</span><span class="rvts18">&nbsp;is the first constant defined. </span><span class="rvts35">"b=2a"</span><span class="rvts18">&nbsp;(i.e. b = 2x4=8) is the second constant defined.</span><span class="rvts35">&nbsp;"c=pi"</span><span class="rvts18">&nbsp;(i.e. c=22/7) is third constant defined. &nbsp;</span><span class="rvts35">"df=abc"</span><span class="rvts18">&nbsp;is the fourth constant defined. It is similar to the second definition and shows that a definition can be in terms of other definitions. </span><span class="rvts35">"SC=u^2+v^2"</span><span class="rvts18">&nbsp;is the fifth definition. Note the name is "SC" (with a uppercase C) and not "Sc" (with a lowercase). The Grapher will not allow the name "Sc" at this stage because "c" is used in a previous &nbsp;define name for definition "c=pi". The value of SC is u^2+v^2. Since u and v are undefined and are not constants known to the Grapher, if they are not independent variables, they are treated as unknowns.</span></p>
+<p class="rvps2"><span class="rvts18">You use the </span><span class="rvts20">Load</span><span class="rvts18">&nbsp;button to launch the file explorer and upload a definition file (i.e a CSV .def, .txt or EXCEL). If you are logged-in to </span><span class="rvts20">Mongo File System (MFS), </span><span class="rvts18">you have the option to upload from the the mongoDb cloud system provided by the Grapher.</span></p>
 <p class="rvps2"><img alt="" style="vertical-align: middle;" src="lib/libdefinesFile.png"></p>
 <p class="rvps2"><span class="rvts18"><br/></span></p>
 <p class="rvps2"><span class="rvts18">You can load a valid definition file &nbsp;before or after adding definitions through the </span><span class="rvts20">Add</span><span class="rvts18">&nbsp;button.</span></p>
@@ -220,7 +220,30 @@
 <p class="rvps2"><span class="rvts18">Checking the </span><span class="rvts23">Show on legend</span><span class="rvts18">&nbsp;checkbox represent markers&nbsp;on the legend.</span></p>
 <p class="rvps2"><span class="rvts18"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts20">Print</span><span class="rvts18">&nbsp;Prints the plot. The toolbar, property panes and sidebar are hidden during printing.</span></li>
+<li class="rvps2"><span class="rvts20">Zone </span><span class="rvts18">Launches the dialog used for defining a zone. </span><span class="rvts24">A horizontal zone highlights an interval of the y axis that is unbounded in the x direction. A vertical zone hightlights an interval of the x axis that is unbounded in the y direction. It is filled with a brush and its border lines are optionally displayed with a pen.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts24"><br/></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/libzoneDlg1.png" usemap="#4723F2DDBBF54B639D6782C5DEEC27B5"><map name="4723F2DDBBF54B639D6782C5DEEC27B5"></map></p>
+<p class="rvps2"><span class="rvts35"><br/></span></p>
+<p class="rvps2"><span class="rvts20">Zone title </span><span class="rvts18">The automactically generated zone title may be change by the user. This title is diplayed on the legend and is unique.</span></p>
+<p class="rvps2"><span class="rvts20">Orientation </span><span class="rvts18">Sets the orientation of the zone. Zones are either vertical or horizontal.</span></p>
+<p class="rvps2"><span class="rvts20">Horizontal axis </span><span class="rvts18">Sets the horizontal axis associated with the zone.</span></p>
+<p class="rvps2"><span class="rvts20">Vertical axis </span><span class="rvts18">Sets the vertical axis associated with the zone.</span></p>
+<p class="rvps2"><span class="rvts20">Left and Right / Bottom and Top </span><span class="rvts18">When </span><span class="rvts23">Orientation</span><span class="rvts18">&nbsp;is vertical the </span><span class="rvts23">Left and Right</span><span class="rvts18">&nbsp;fields hold the lower and upper x limits. When </span><span class="rvts23">Orientation</span><span class="rvts18">&nbsp;is horizontal the </span><span class="rvts23">Bottom and &nbsp;Top</span><span class="rvts18">&nbsp;fields hold the lower and upper y limits.</span></p>
+<p class="rvps2"><span class="rvts20">Brush </span><span class="rvts18">Sets the color of the brush use to fill the zone.</span></p>
+<p class="rvps2"><span class="rvts20">Pen </span><span class="rvts18">Sets the color of the pen use to draw the border lines of the zone.</span></p>
+<p class="rvps2"><span class="rvts20">Represent zone item on the legend&nbsp;</span><span class="rvts23">&nbsp;</span><span class="rvts18">If checked, the zone item is represented on the legend.</span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts20">Print</span><span class="rvts18">&nbsp;Prints the plot. The toolbar, property panes and sidebar are hidden during printing</span></li>
+</ul>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts20">Reserved words</span><span class="rvts18">&nbsp;Display a list of reserved words (keywords) use by the Grapher.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts20">Recycle bin</span><span class="rvts18">&nbsp;Shows the recycle bin. Plot items remove from the plot are held in the recycle bin where the consume memory. Emptying the recycle bin may improve performance.</span></li>
 </ul>
 <p class="rvps2"><span class="rvts18"><br/></span></p>
 </td>
@@ -239,10 +262,10 @@
 </td>
 </tr>
 <tr valign="top">
-<td width="685" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts35">Choose</span><a name="Choosefiles"></a><span class="rvts35">&nbsp;Files</span></p>
+<td width="685" valign="top" style="padding: 1px;"><p class="rvps2"><a name="UploadFiles"></a><span class="rvts35">Upload Files</span></p>
 <p class="rvps2"><a name="tab-search"></a><span class="rvts18">Launches your system's file explorer. From the explorer, you select the table file (.txt, .xls) or plot file (.plt) uploaded to the Grapher. (see </span><a class="rvts12" href="PlottingFromDataFile.html">Plotting From Data File</a><span class="rvts18">)</span></p>
 </td>
-<td width="334" valign="top" style="padding: 1px;"><p class="rvps2"><img alt="" style="vertical-align: middle;" src="lib/libchooseFile1.png"></p>
+<td width="334" valign="top" style="padding: 1px;"><p class="rvps2"><img alt="" style="padding : 1px;" src="lib/libchooseFile12.png" usemap="#357A3FC7AF1043B4AD721DBD36FD584E"><map name="357A3FC7AF1043B4AD721DBD36FD584E"></map></p>
 </td>
 </tr>
 <tr valign="top">
@@ -365,10 +388,14 @@
 <p class="rvps6"><span class="rvts23"><br/></span></p>
 <p class="rvps6"><span class="rvts23"><br/></span></p>
 <p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
 <div class="rvps2"><table width="100%" border="0" cellpadding="1" cellspacing="2" style="border-width: 0px; border-spacing: 2px;">
 <tr valign="top">
 <td width="595" valign="top" style="padding: 1px;"><p class="rvps2"><a name="Mongo"></a><span class="rvts35">Mongo File System (MFS)</span></p>
-<p class="rvps2"><span class="rvts18">Allow registration for and login to a cloud base (MongoDB) filesystem. &nbsp;Once you are logged in, you have access to a windows-like explorer and a minimal notepad. This cloud storage facility is an alternative to the saving obtain from the file menu.</span></p>
+<p class="rvps2"><span class="rvts18">Allow registration for and login to a cloud base (MongoDB) filesystem. &nbsp;Once you are logged in, you have access to a windows-like explorer and a minimal notepad. This cloud storage facility is an alternative to the saving on your local filesystem.</span></p>
 </td>
 </tr>
 </table>
@@ -378,21 +405,23 @@
 <td width="334" valign="top" style="padding: 1px;"><p class="rvps2"><img alt="" style="vertical-align: middle;" src="lib/libwatch.png"></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/operationCombine.png"></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/operationCombine1.png" usemap="#EB9D893DD8A2441880134855A4B488BB"><map name="EB9D893DD8A2441880134855A4B488BB"></map></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/operationTransform.png"></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/operationTransform1.png" usemap="#8B5B0CD4577B4DA0AFA93F44B43ACBB0"><map name="8B5B0CD4577B4DA0AFA93F44B43ACBB0"></map></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/operationPoint.png"></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/operationPoint1.png" usemap="#73C223CF1AE14845AE33148F493B9347"><map name="73C223CF1AE14845AE33148F493B9347"></map></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/mongoFileSystem.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/mongoFileSystem1.png" usemap="#B09933AA57CF49C385FCE2D10EB45741"><map name="B09933AA57CF49C385FCE2D10EB45741"></map></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
 </td>
 </tr>
 <tr valign="top">
 <td width="685" valign="top" style="padding: 1px;"><p class="rvps2"><span class="rvts35">Help</span></p>
-<p class="rvps2"><span class="rvts18">Launches the user manual you are currently reading.</span></p>
+<p class="rvps2"><span class="rvts18">Launches the help documentation you are currently reading.</span></p>
 </td>
 <td width="334" valign="top" style="padding: 1px;"><p class="rvps2"><img alt="" style="vertical-align: middle;" src="lib/libhelp.png"></p>
 </td>
