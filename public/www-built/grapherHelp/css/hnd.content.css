@@ -481,33 +481,33 @@ span.rvts70
  color: #000000;
  background-color: #f9f9f9;
 }
-span.rvts71
+a.rvts71, span.rvts71
+{
+ font-size: 12pt;
+ font-family: '@yu gothic ui';
+ font-style: italic;
+ color: #0000ff;
+ text-decoration: underline;
+}
+span.rvts72
 {
  font-size: 12pt;
  font-family: 'yu gothic ui';
  color: #000000;
 }
-a.rvts72, span.rvts72
+a.rvts73, span.rvts73
 {
  font-size: 12pt;
  font-family: 'yu gothic ui';
  color: #0000ff;
  text-decoration: underline;
 }
-a.rvts72:hover { color: #22527b; }
-a.rvts73, span.rvts73
-{
- font-size: 12pt;
- font-family: 'yu gothic ui';
- color: #190000;
- text-decoration: none;
-}
-a.rvts73:hover { color: #22527b; text-decoration: underline; }
+a.rvts73:hover { color: #22527b; }
 a.rvts74, span.rvts74
 {
  font-size: 12pt;
  font-family: 'yu gothic ui';
- color: #3f3f3f;
+ color: #190000;
  text-decoration: none;
 }
 a.rvts74:hover { color: #22527b; text-decoration: underline; }
@@ -515,19 +515,27 @@ a.rvts75, span.rvts75
 {
  font-size: 12pt;
  font-family: 'yu gothic ui';
+ color: #3f3f3f;
+ text-decoration: none;
+}
+a.rvts75:hover { color: #22527b; text-decoration: underline; }
+a.rvts76, span.rvts76
+{
+ font-size: 12pt;
+ font-family: 'yu gothic ui';
  color: #0000ff;
  text-decoration: none;
 }
-a.rvts75:hover { color: #22527b; }
-a.rvts76, span.rvts76
+a.rvts76:hover { color: #22527b; }
+a.rvts77, span.rvts77
 {
  font-size: 12pt;
  font-family: 'yu gothic ui';
  color: #0000ff;
  text-decoration: underline;
 }
-a.rvts76:hover { color: #22527b; }
-a.rvts77, span.rvts77
+a.rvts77:hover { color: #22527b; }
+a.rvts78, span.rvts78
 {
  font-size: 12pt;
  font-family: '@yu gothic ui';
@@ -536,11 +544,11 @@ a.rvts77, span.rvts77
  color: #0000ff;
  text-decoration: underline;
 }
-span.rvts78
+span.rvts79
 {
  color: ;
 }
-a.rvts79, span.rvts79
+a.rvts80, span.rvts80
 {
  font-size: 12pt;
  font-family: '@yu gothic ui';
@@ -548,7 +556,7 @@ a.rvts79, span.rvts79
  color: #000000;
  text-decoration: none;
 }
-a.rvts79:hover { color: #22527b; }
+a.rvts80:hover { color: #22527b; }
 /* ========== Para Styles ========== */
 p,ul,ol /* Paragraph Style */
 {
