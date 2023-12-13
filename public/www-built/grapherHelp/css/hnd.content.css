@@ -557,6 +557,10 @@ a.rvts80, span.rvts80
  text-decoration: none;
 }
 a.rvts80:hover { color: #22527b; }
+span.rvts81
+{
+ font-weight: bold;
+}
 /* ========== Para Styles ========== */
 p,ul,ol /* Paragraph Style */
 {
