@@ -17,7 +17,7 @@ const options = {
   ], //default: undefined
   //access_token_expiry: "15s", //default: 900s
   // cookie_max_age: 1000 * 60 * 60, //default: 1000 * 60 * 60 * 24 (1 day)
-  cookie_secure: false, //default: true
+  //cookie_secure: false, //default: true
 };
 
 //Only needed for same domain (i.e. when no whitelist is provided in options argument).
