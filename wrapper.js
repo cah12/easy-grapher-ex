@@ -10,12 +10,12 @@ const express = require("express");
 const app = express();
 
 const options = {
-  white_list: [
-    "http://127.0.0.1:5500",
-    // "http://localhost:3500/",
-    //"https://cah12.github.io/easy-grapher/",
-    "https://cah12.github.io",
-  ], //default: undefined
+  // white_list: [
+  //   "http://127.0.0.1:5500",
+  //   // "http://localhost:3500/",
+  //   //"https://cah12.github.io/easy-grapher/",
+  //   "https://cah12.github.io",
+  // ], //default: undefined
   //access_token_expiry: "15s", //default: 900s
   // cookie_max_age: 1000 * 60 * 60, //default: 1000 * 60 * 60 * 24 (1 day)
   //cookie_secure: false, //default: true
