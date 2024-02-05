@@ -12,7 +12,7 @@ const app = express();
 const options = {
   white_list: [
     "http://127.0.0.1:5500",
-    "http://localhost:3500/",
+    // "http://localhost:3500/",
     "https://cah12.github.io/easy-grapher/",
   ], //default: undefined
   //access_token_expiry: "15s", //default: 900s
