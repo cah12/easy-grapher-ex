@@ -30,7 +30,6 @@ app.use(express.json({ limit: "140mb", extended: true }));
 app.use(express.static(path.join(__dirname, "public", "www-built")));
 
 const PORT = process.env.PORT || 5000;
-console.log(4567);
 app.listen(PORT, function () {
   console.log(`Server started on PORT http://localhost:${PORT}`);
 });
