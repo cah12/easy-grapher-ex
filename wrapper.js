@@ -16,6 +16,7 @@ const options = {
     //"https://cah12.github.io/easy-grapher/",
     "https://cah12.github.io",
     "https://simplegrapher.onrender.com",
+    "https://simple-grapher-dd5dca4c1645.herokuapp.com",
   ], //default: undefined
   //access_token_expiry: "15s", //default: 900s
   // cookie_max_age: 1000 * 60 * 60, //default: 1000 * 60 * 60 * 24 (1 day)
